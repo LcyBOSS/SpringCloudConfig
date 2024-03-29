@@ -1,5 +1,5 @@
 server:
-  port: 8765
+  port: 8763
 spring:
   application:
     name: eurekaclient
@@ -10,5 +10,8 @@ eureka:
 management:
   security:
     #关闭安全验证，否则访问refresh端点时会提示权限不足
+    enabled: false
+security:
+  basic:
     enabled: false
 
